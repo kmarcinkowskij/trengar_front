@@ -1,0 +1,133 @@
+.leftPart {
+    height: 95vh;
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px;
+    
+    gap: 1%;
+}
+
+.leftPart .catch {
+    font-size:3vw;
+    width: 90%;
+    align-self: flex-start;
+}
+
+.leftPart .desc h2 {
+    font-size: 3rem;
+}
+
+.leftPart .desc p {
+    font-size: 1rem;
+    width: 80%;
+}
+
+.leftPart svg:nth-child(1) {
+  width: 70% !important;
+}
+
+
+.leftPart svg {
+  width: 80%;
+}
+
+.leftPart .desc{
+    width: 57%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+
+
+
+.catch-part {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.leftPart .desc-wrapper {
+    display: flex;
+    flex-flow: row;
+}
+
+.leftPart .star {
+    width: 15rem;
+    transform-box: content-box;
+    transform-origin: center;
+    transition: 0.5s cubic-bezier(.52,.08,.5,1.41);
+}
+
+.leftPart .star:hover {
+    width: 15rem;
+    transform: rotate(-15deg);
+}
+
+.star1 {
+    transform-box: content-box;
+    transform-origin: center;
+    animation: ease infinite rotateClockwise 2s 3s;
+}
+
+.star2 {
+    transform-box: content-box;
+    transform-origin: center;
+    animation: ease infinite rotateCounterClockwise 5s 3s;
+}
+
+.explore-button {
+    width: 50%;
+    height: 50px;
+    border: 3px solid #252525;
+    outline: none;
+    background: transparent;
+    font-size: 1.5em;
+    border-radius: 0 20px 0 20px;
+    position: relative;
+    transition: ease .25s;
+    cursor: pointer;
+}
+
+.explore-button:hover {
+    width: 50%;
+    height: 50px;
+    border: 3px solid #252525;
+    outline: none;
+    background: #252525;
+    color: #FBFAEE;
+    font-size: 1.5em;
+    border-radius: 20px 0 20px 0;
+    position: relative;
+}
+
+
+
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCounterClockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+

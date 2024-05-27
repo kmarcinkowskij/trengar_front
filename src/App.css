@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=League+Gothic&family=Lexend+Giga:wght@100..900&family=Libre+Caslon+Display&family=Medula+One&family=Michroma&family=Oi&family=Poiret+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.medula-one-regular {
+  font-family: "Medula One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.libre-caslon-display-regular {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.lexend-giga-regular {
+  font-family: "Lexend Giga", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body {
+  background: #FBFAEE;
+  color: #252525;
+}
+
+#App {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.middle {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+

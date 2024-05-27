@@ -1,0 +1,10 @@
+img {
+    height: 90vh;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

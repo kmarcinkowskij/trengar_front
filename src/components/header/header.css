@@ -1,0 +1,12 @@
+header {
+    width: 100%;
+    height: 5vh;
+}
+
+.left {
+    width: 15%;
+    height: 100%;
+    font-size: 2.5vw;
+    display: grid;
+    place-items: center;
+}
