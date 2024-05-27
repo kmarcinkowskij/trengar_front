@@ -3,6 +3,7 @@
 *{
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .medula-one-regular {
@@ -44,15 +45,25 @@
   font-style: normal;
 }
 
+.lexend-giga-light {
+  font-family: "Lexend Giga", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-style: normal;
+}
+
+
 
 body {
   background: #FBFAEE;
   color: #252525;
 }
 
-#App {
+.App {
   width: 100vw;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: column;
 }
 
@@ -61,4 +72,23 @@ body {
   flex-flow: row;
   justify-content: center;
 }
+
+.second {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #252525;
+}
+
+.second::before {
+  content: '';
+  background: #FBFAEE;
+  position: absolute;
+  width: 85%;
+  height: 110%;
+}
+
 
