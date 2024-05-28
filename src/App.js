@@ -10,8 +10,9 @@ export const TagContext = createContext();
 
 const TagContextProvider = ({ children }) => {
     const [tags, setTags] = useState([]);
+    const [choice, setChoice] = useState("");
 
-    return <TagContext.Provider value= {{ tags, setTags }}>
+    return <TagContext.Provider value= {{ tags, setTags, choice, setChoice }}>
         {children}
     </TagContext.Provider>
 }
