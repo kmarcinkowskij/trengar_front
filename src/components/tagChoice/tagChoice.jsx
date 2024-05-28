@@ -60,7 +60,7 @@ export default function() {
             <section className={"software-type-container"}>
                 <section className={"types"}>
                     {possibleChoices.map((item) => {
-                        return <button className={`tag michroma-regular`} onClick={()=>{changeType({item})}}>{item}</button>
+                        return <button className={`software-tag michroma-regular`} onClick={()=>{changeType({item})}}>{item}</button>
                     })}
                 </section>
             </section>

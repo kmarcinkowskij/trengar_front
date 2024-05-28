@@ -139,11 +139,11 @@
     color: #252525;
     cursor: pointer;
     background-image: -webkit-linear-gradient(30deg, #252525 50%, transparent 50%);
-    background-image: linear-gradient(30deg, #252525 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #DE81FF 50%, transparent 50%);
     background-size: 400px 300px;
     background-repeat: no-repeat;
     background-position: 100%;
-    -webkit-transition: border-radius .5s cubic-bezier(.52,.08,.5,1.41), background .6s ease, color .5s ease;
+    -webkit-transition: border-radius .25s cubic-bezier(.52,.08,.5,1.41), background .3s ease, color .5s ease;
 }
 
 .refresh-button:hover {

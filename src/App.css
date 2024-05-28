@@ -75,7 +75,7 @@ body {
 
 .second {
   width: 90%;
-  height: 90vh;
+  height: 150vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -88,7 +88,7 @@ body {
   background: #FBFAEE;
   position: absolute;
   width: 85%;
-  height: 110%;
+  height: 160%;
 }
 
 

@@ -35,6 +35,7 @@ export default function ToolReccomendation(props) {
         })
         .then((response) => response.json())
             .then((data) => {
+                console.log(data);
                 setData(data);
             })
             .catch((err) => {
