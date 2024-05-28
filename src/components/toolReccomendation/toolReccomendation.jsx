@@ -1,8 +1,20 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import "./toolReccomendation.css";
 import PercentageBar from "../percentageBar/percentageBar.jsx";
+import { TagContext } from "../../App.js";
 export default function ToolReccomendation(props) {
     const [toolData, setData] = useState([]);
+    let [choice, setChoice] = useState("choice");
+    const {tags} = useContext(TagContext);
+
+    let tagsList = "[";
+    tags.forEach((element, index) => {
+        if(index === tags.length-1){
+            tagsList += `"${element}"]`;
+            return;
+        }
+        tagsList += `"${element}",`;
+    });
 
     const refreshItems = async () => {
         fetch("http://127.0.0.1:8080/getToolByTags/", {
@@ -17,13 +29,12 @@ export default function ToolReccomendation(props) {
             referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
             body: JSON.stringify({
                 "type": "code-editor",
-                "tags": ["free"],
+                "tags": ["fast"],
                 "systemTypes": ["windows"]
             }), // body data type must match "Content-Type" header
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
                 setData(data);
             })
             .catch((err) => {
@@ -39,14 +50,20 @@ export default function ToolReccomendation(props) {
         values = Object.values(toolData.at(i))
         array.push(values);
     }
+
+    
+    
     return (
         
         <>
+        
             <button onClick={refreshItems} className={"refresh-button"}>Refresh</button>
             <section className={"tool-cards-container"}>
+            
             {array.map((item, index)=> {
                 return (
                     <>
+
                             <section className={"card-container"} key={index}>
                                 <section className={"card-content"}>
                                     <div className={"card-header michroma-regular"}>
@@ -57,13 +74,17 @@ export default function ToolReccomendation(props) {
                                     <h6 className={"creator lexend-giga-regular"}>{item[8]}</h6>
                                     </div>
                                     </div>
-                                    
+                                    <div className={"row"}>
                                     <hr />
+                                    <hr />
+                                    </div>
                                     <div className={"desc-wrapper"}>
                                             <p className={"lexend-giga-light tool-description"}>{item[3]}</p>
                                     </div>
+                                    <div className={"row"}>
                                     <hr />
-                                        
+                                    <hr />
+                                    </div>
                                     <div className={"card-bar-container michroma-regular"}>
                                         <div className={"bar-inside"}>
                                             <div className={"card-ease-bar"}>

@@ -76,7 +76,7 @@
     height: 20%;
     text-overflow: ellipsis;
     transition: height .5s cubic-bezier(.52,.08,.5,1.41), border .5s ease;
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px;
     border: 1px solid #252525;
     padding: 20px;
     position: relative;
@@ -94,6 +94,7 @@
     left: 0;
     z-index: 50;
 }
+
 
 .card-content .tool-description {
     z-index: 60;
@@ -150,3 +151,9 @@
     background-position: 0;
 }
 
+.card-container .row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
